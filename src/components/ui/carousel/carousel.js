@@ -13,8 +13,6 @@ const Carousel = ({ children, groups, itemWidth, spacing }) => {
 		</CarouselItem>
 	));
 
-	console.log(currentGroupIndex, carouselItems.length);
-
 	const disabledBack = currentGroupIndex === 0;
 	const disabledNext = currentGroupIndex + 1 === carouselItems.length;
 

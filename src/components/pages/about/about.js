@@ -1,6 +1,7 @@
+import { useEffect, useState } from 'react';
 import { useHistory } from 'react-router-dom';
 import { Layout } from '../../hocs';
-import { useMarsImages, usePageTitle } from '../../../hooks';
+import { useMarsImages, usePageTitle, useBreakpoints } from '../../../hooks';
 import { Button, Carousel } from '../../ui';
 import { MarsImage, MARS_IMAGE_WIDTH } from '../../common';
 import { Container } from './about.style';
@@ -9,9 +10,14 @@ const About = () => {
 	usePageTitle('About');
 	const history = useHistory();
 	const { images, loading } = useMarsImages('2020-07-14​');
+	const { isXs, isSm, isMd, isLg } = useBreakpoints();
 
-	console.log(loading);
-
+	let groups = 5;
+	if (isXs) groups = 1;
+	else if (isSm) groups = 2;
+	else if (isMd) groups = 3;
+	else if (isLg) groups = 4;
+	
 	return (
 		<Container>
 			<div className="top">
@@ -40,19 +46,19 @@ const About = () => {
 			{loading ? (
 				<h2>Loading Carousel...</h2>
 			) : (
-				<div className="carousel-box">
-					<h3>
-						Curiosity rover images <span>from today</span>
-					</h3>
-					<div>
-						<Carousel groups={5} itemWidth={MARS_IMAGE_WIDTH} spacing={10}>
-							{images.map(img => (
-								<MarsImage key={img.id} image={img} />
-							))}
-						</Carousel>
+					<div className="carousel-box">
+						<h3>
+							Curiosity rover images <span>from today</span>
+						</h3>
+						<div>
+							<Carousel groups={groups} itemWidth={MARS_IMAGE_WIDTH} spacing={10}>
+								{images.map(img => (
+									<MarsImage key={img.id} image={img} />
+								))}
+							</Carousel>
+						</div>
 					</div>
-				</div>
-			)}
+				)}
 		</Container>
 	);
 };
