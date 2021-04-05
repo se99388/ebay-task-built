@@ -1,4 +1,4 @@
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import { HashRouter, Switch, Route } from 'react-router-dom';
 import About from './pages/about';
 import Images from './pages/images';
 import Weather from './pages/weather';
@@ -6,7 +6,7 @@ import Page404 from './pages/page-404';
 
 const Routes = () => {
 	return (
-		<BrowserRouter basename='/'>
+		<HashRouter>
 			<Switch>
 				<Route path="/images" exact>
 					<Images title="Mars Images By Date" />
@@ -21,7 +21,7 @@ const Routes = () => {
 					<Page404 />
 				</Route>
 			</Switch>
-		</BrowserRouter>
+		</HashRouter>
 	);
 };
 

@@ -22,7 +22,7 @@ const About = () => {
 		<Container>
 			<div className="top">
 				<div className="rover-img">
-					<img src="/img/rover-big.jpg" alt="" />
+					<img src="./img/rover-big.jpg" alt="" />
 					<h4>Curiosity rover image</h4>
 				</div>
 				<div className="text">
