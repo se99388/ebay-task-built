@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.js": "/ebay-task-built/static/js/main.f25b3291.chunk.js",
-    "main.js.map": "/ebay-task-built/static/js/main.f25b3291.chunk.js.map",
+    "main.js": "/ebay-task-built/static/js/main.dd8c6805.chunk.js",
+    "main.js.map": "/ebay-task-built/static/js/main.dd8c6805.chunk.js.map",
     "runtime-main.js": "/ebay-task-built/static/js/runtime-main.78a9fdf8.js",
     "runtime-main.js.map": "/ebay-task-built/static/js/runtime-main.78a9fdf8.js.map",
     "static/css/2.93cf935d.chunk.css": "/ebay-task-built/static/css/2.93cf935d.chunk.css",
-    "static/js/2.5631e95f.chunk.js": "/ebay-task-built/static/js/2.5631e95f.chunk.js",
-    "static/js/2.5631e95f.chunk.js.map": "/ebay-task-built/static/js/2.5631e95f.chunk.js.map",
+    "static/js/2.606d58c8.chunk.js": "/ebay-task-built/static/js/2.606d58c8.chunk.js",
+    "static/js/2.606d58c8.chunk.js.map": "/ebay-task-built/static/js/2.606d58c8.chunk.js.map",
     "index.html": "/ebay-task-built/index.html",
     "static/css/2.93cf935d.chunk.css.map": "/ebay-task-built/static/css/2.93cf935d.chunk.css.map",
-    "static/js/2.5631e95f.chunk.js.LICENSE.txt": "/ebay-task-built/static/js/2.5631e95f.chunk.js.LICENSE.txt",
+    "static/js/2.606d58c8.chunk.js.LICENSE.txt": "/ebay-task-built/static/js/2.606d58c8.chunk.js.LICENSE.txt",
     "static/media/dx.light.css": "/ebay-task-built/static/media/dxicons.d8b3a23c.ttf"
   },
   "entrypoints": [
     "static/js/runtime-main.78a9fdf8.js",
     "static/css/2.93cf935d.chunk.css",
-    "static/js/2.5631e95f.chunk.js",
-    "static/js/main.f25b3291.chunk.js"
+    "static/js/2.606d58c8.chunk.js",
+    "static/js/main.dd8c6805.chunk.js"
   ]
 }
