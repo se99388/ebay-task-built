@@ -6,7 +6,7 @@ import Page404 from './pages/page-404';
 
 const Routes = () => {
 	return (
-		<BrowserRouter>
+		<BrowserRouter basename='/'>
 			<Switch>
 				<Route path="/images" exact>
 					<Images title="Mars Images By Date" />
